@@ -1,0 +1,115 @@
+{
+  "allcommand": [
+    "Menu"
+  ],
+  "anonymous": [],
+  "blockcmd": [],
+  "banned": [],
+  "premium": [],
+  "claim": [],
+  "data": [
+    {
+      "name": "premium",
+      "id": []
+    },
+    {
+      "name": "commands",
+      "id": []
+    },
+    {
+      "name": "limit",
+      "id": []
+    }
+  ],
+  "sewa": [],
+  "antispam": [],
+  "dashboard": [
+    {
+      "cmd": "Menu",
+      "succes": 1,
+      "failed": 0
+    }
+  ],
+  "listerror": [],
+  "sticker": {},
+  "audio": {},
+  "hittoday": [
+    {
+      "id": "run",
+      "expired": 1688483559455,
+      "totalcmd": 1
+    }
+  ],
+  "clearchat": [],
+  "users": {
+    "6285947484891@s.whatsapp.net": {
+      "name": "JAVAN",
+      "id": "6285947484891",
+      "date": "3 Juli 2023",
+      "exp": 100,
+      "level": 1,
+      "hit": 1,
+      "balance": 1000,
+      "limit": 30,
+      "glimit": 30,
+      "serial": "A1VB",
+      "lastclaim": 0,
+      "afk": -1,
+      "pc": 0,
+      "grade": "Newbie",
+      "autolevelup": false,
+      "afkReason": ""
+    }
+  },
+  "chats": {
+    "120363041471766776@g.us": {
+      "name": [],
+      "add": 0,
+      "welcome": true,
+      "detect": true,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "desc": true,
+      "descUpdate": true,
+      "autostiker": false,
+      "antilink": false,
+      "antilinkgc": false,
+      "antidelete": false,
+      "antiasing": false,
+      "banchat": false,
+      "expired": 0,
+      "antibadword": true,
+      "antispam": true,
+      "antitroli": false,
+      "antivirtex": false,
+      "antihidetag": false,
+      "viewonce": true,
+      "nsfw": false,
+      "clear": false,
+      "clearTime": 0
+    }
+  },
+  "settings": {
+    "settingbot": {
+      "status": 1687749168865,
+      "setmenu": "document",
+      "docType": "docx",
+      "Qoted": "ftoko",
+      "autoBio": false,
+      "multi": true,
+      "prefix": "!",
+      "fake": "Lanabotz",
+      "autoblockcmd": false,
+      "fake1": "Extream",
+      "replyType": "web",
+      "setwelcome": "type11",
+      "autoReport": true,
+      "autoLevel": true,
+      "autoSticker": false
+    }
+  },
+  "kickon": {},
+  "others": {}
+}
