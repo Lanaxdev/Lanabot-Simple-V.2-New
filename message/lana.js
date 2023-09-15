@@ -709,62 +709,6 @@ _data.Succes(toFirstCase(command), dash, allcommand)
 try{
 switch(command) {
 
-
-
-
-
-
-function makeId(length) {
-var result = "";
-var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghij0123456789";
-let characterslength =characters.length;
-for (var i = 0; i < length; i++){
-result += characters.charAt(Math.floor(Math.random() * characterslength));
-}
-return result;
-}
-
-case 'ff' : {
-	if (!isGroupAdmins && !isOwner)return setReply('hanya admin dan owner') 
-	if (!isGroup) return setReply('opo cok')
-	let res = await fetch(`https://v1.apigames.id/transaksi/http-get-v1?merchant=M220511FSMZ8818TO&secret=92b49f13e5d556ce5c2738a8d7163f4f699052c5859f8f3f833531a32acaca19&produk=${prefix}&tujuan=${command}&ref=JAVAN-${makeId(6)}`);)
-	let json = res.json();
-	if (res.status !== 200) throw await res.text();
-	if (!json.status) throw json;
-	let ptn2023 = ` \n┃
-	┃> *🎮ID GAME:* ${json.data.destination}
-	┃> *💎ORDERAN:* ${json.data.product_code} DM
-	┃> *🎰SN:* ${json.data.sn}
-	┃> *📂STATUS:* ${json.data.status}
-	┃> *🕰️WAKTU:* ${date} ,${waktuSekarang}
-	┃> *Ref_id:* ${json.data.ref_id}
-	┃ *TERIMAKASIH TELAH ORDER DI JAVAN SHOP ID*
-	┗━━━━━━━━━━━━━━━━━━━ꕥ`;
-	  conn.reply(m.chat, `┏━━━ꕥ *「 DETAIL ORDERAN 」* ꕥ━⬣ ${ptn2023}`, m);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //---------------- BATAS DARI AREA CASE -------------------\
     
 
@@ -779,7 +723,7 @@ case 'ff' : {
 
     
   case 'menu': {
-let anu = `Hai Kak *${pushname}*👋! perkenalkan saya adalah *Maulana bot* , Saya di jalankan melalui perangkat lunak otomatis yang melakukan tugas berulang melalui jaringan. Saya juga dapat mengikuti instruksi yang anda berikan.
+let anu = `Hai Kak *${pushname}*👋!
 
 
 ── 「 ${botName} - Simple V.2 」 ──
@@ -789,7 +733,6 @@ ${week}, ${calender}
 
 > Limit : ${isPremium ? 'Unlimited' : `${db.data.users[sender].limit}`}
 > Balance : Rp  *${db.data.users[sender].balance.toLocaleString()}*
-
 > Library : ${baileysVersion}
 ≻ Time : ${timeWib} WIB 
 > Total Feature : ${totalFitur()}
@@ -1046,8 +989,6 @@ ${nah}
 • *ArxzyDev*
 
 📝 Note : _*Script ini gratis buat kalian , tidak untuk di perjual belikan!!*_
-
-*Youtube* : https://youtube.com/@maulanabot
  
 `
 
