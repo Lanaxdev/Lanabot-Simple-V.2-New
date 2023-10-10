@@ -32,8 +32,7 @@
 # Thanks to
  <a href=" "><img src="https://https://github.com/hexagonz.png?size=100" width="100" height="100"></a> | [![FERDIZ](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz-afk) | [![RASHID](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) 
 ---|---|---
-[Adiwajshing](https://github.com/adiwajshing/Baileys)  | [Rtwone]( ) |
-| [Lana Botz]( ) |
+[Adiwajshing](https://github.com/adiwajshing/Baileys)  | [Rtwone]( ) || [Lana Botz]( ) |
 Owner of Baileys | Owner Of Chitanda Eru | Developer Scrip
 
 
