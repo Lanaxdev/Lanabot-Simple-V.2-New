@@ -1,5 +1,5 @@
 /**
-  * Created by Maulana / Lana
+  * Created by Lana
   * Base : Dittaz & Irfan Haryanto
   * Contact me on WhatsApp wa.me/6281775445373
   * Subscribe me on Youtube : https://youtube.com/@maulanabot
@@ -10,7 +10,7 @@
 /**
 INGAT BANG , INI SCRIPT GRATIS BUAT SEMUA ORANG , JANGAN DI JUAL!! JIKA SCRIPT DI JUAL NERAKA MENUNGGUMU!! 
 
-SCRIPT ORI BUATAN MAULANA!!
+SCRIPT ORI BUATAN LANA!!
 BASE ORI By IRFAN x Ditaz!!
 
 */
@@ -58,7 +58,6 @@ import _spam from '../lib/antispam.js'
 import _ban from "../lib/banned.js"
 //import mess from "./message.js" 
 import {register} from "./register.js"
-import { command } from "yargs";
 
 
 const thumb = fs.readFileSync('./stik/thumb.jpeg')
@@ -187,18 +186,15 @@ if(!isCmd && !isAllMedia && !isReaction && budy.length < 8000 && type !== 'proto
 if(isCmd) logs.commands(m,command) 
     
 
- 
-
 
 //By lana
 const onlyGroup = async() => {
 conn.sendMessage(from, {
-text: `${ucapanWaktu}kak ${pushname}\nFitur ini hanya dapat digunakan di group\n\n *Silahkan Menggunakan Fitur Tersebut Di Dalam Group*!\n `}, {quoted: m})
+text: `${ucapanWaktu}kak ${pushname}\nFitur ini hanya dapat digunakan di group\n\n *Silahkan Menggunakan Fitur Tersebut Di Dalam Group*!\n
+
+- Link group Store bot : https://chat.whatsapp.com/LFbp0YPFkdNJ9kIx43VK1t
+- Link Group Bot : https://chat.whatsapp.com/BUWbU02yquVIfxpVIbA1KS`}, {quoted: m})
   }
-
-
-    
-    
 
 
   
@@ -281,10 +277,6 @@ setReply(mess.only.ownerB)
 
   
 //Bot tidak bisa di akses di pc kecuali premium
-
-
-
-
 
 
 
@@ -705,6 +697,31 @@ _data.Succes(toFirstCase(command), dash, allcommand)
 }
 
 
+const gasY = { 
+key: {
+fromMe: [], 
+participant: "0@s.whatsapp.net", ...(from ? { remoteJid: "" } : {}) 
+},
+
+'message': {
+ "stickerMessage": {
+"url": "https://mmg.whatsapp.net/d/f/At6EVDFyEc1w_uTN5aOC6eCr-ID6LEkQYNw6btYWG75v.enc",
+"fileSha256": "YEkt1kHkOx7vfb57mhnFsiu6ksRDxNzRBAxqZ5O461U=",
+"fileEncSha256": "9ryK8ZNEb3k3CXA0X89UjCiaHAoovwYoX7Ml1tzDRl8=",
+"mediaKey": "nY85saH7JH45mqINzocyAWSszwHqJFm0M0NvL7eyIDM=",
+"mimetype": "image/webp",
+"height": 40,
+"width": 40,
+"directPath": "/v/t62.7118-24/19433981_407048238051891_5533188357877463200_n.enc?ccb=11-4&oh=01_AVwXO525CP-5rmcfl6wgs6x9pkGaO6deOX4l6pmvZBGD-A&oe=62ECA781",
+"fileLength": "99999999",
+"mediaKeyTimestamp": "16572901099967",
+        'isAnimated': []
+}}}
+
+
+
+  
+
 
 try{
 switch(command) {
@@ -721,50 +738,85 @@ switch(command) {
   * If you want to buy an updated script that is not encrypted, please WhatsApp me
 */
 
-    
+  case 'help':
   case 'menu': {
-let anu = `Hai Kak *${pushname}*👋!
+let anu = `「 Hi, ${pushname}👋 」
+ 「 ${ucapanWaktu} 」
 
-
-── 「 ${botName} - Simple V.2 」 ──
-	
-*${botName}*
-${week}, ${calender} 
-
+> Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
+> Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')} WIB
 > Limit : ${isPremium ? 'Unlimited' : `${db.data.users[sender].limit}`}
 > Balance : Rp  *${db.data.users[sender].balance.toLocaleString()}*
 > Library : ${baileysVersion}
-≻ Time : ${timeWib} WIB 
 > Total Feature : ${totalFitur()}
 ≻ Total User : ${Object.keys(db.data.users).length}
 
  `+readmore+`
-
 
 ${nan}
 ${non} *OTHER MENU*
 ${nin} tqto 
 ${nin} sc  _<gratis>_
 ${nin} del
-${nin} rules
+${nin} donate
+${nin} donasi
+${nin} sewa _<sewabot>_
 ${nin} ping
+${nin} speed
 ${nin} owner
-${nin} sewa
+${nin} rules
+${nin} runtime
+${nin} 
+${nah}
+
+${nan}
+${non} *MAIN MENU*
+${nin} sad
+${nin} dare
+${nin} truth
+${nin} puisi
+${nin} bucin
+${nin} pantun
+${nin} faktaunik
+${nin} katabijak
+${nin} katailham
+${nah}
+
+${nan} AI MENU
+${nin} ai  _<teks>_
+${nin} remini  _<Image>_
+${nin} tohd  _<image>_
+${nin} nino  _<teks>_
+${nin} miku  _<teks>_
+${nin} klee  _<teks>_
+${nin} erza  _<teks>_
+${nin} luffy _<teks>_
+${nin} robin _<teks>_
+${nin} paimon  _<teks>_
+${nah}
+
+${nan}
+${non} *STALKER MENU*
+${nin} igstalk
+${nin} 
+${nin}
 ${nah}
 
 ${nan}
 ${non} *DOWNLOAD MENU*
-${nin} ig  _*<url>*_
-${nin} play  _*<text>*_
-${nin} tiktok  _*<url>*_
-${nin} ytmp3  _*<url>*_
-${nin} ytmp4  _*<url>*_
+${nin} ig  _<url>_
+${nin} play  _<text>_
+${nin} tiktok  _<url>_
+${nin} ytmp3  _<url>_
+${nin} ytmp4  _<url>_
+${nin} tiktokmusic  <url>
 ${nah}
 
 ${nan}
 ${non} *ISLAMIC MENU*
 ${nin} alquran
 ${nin} kisahnabi
+${nin} doaharian
 ${nin} jadwalsholat 
 ${nin} asmaulhusna   
 ${nin} alquranaudio
@@ -788,11 +840,11 @@ ${nah}
 
 ${nan}
 ${non} *USER MENU*
-${nin} .limit
-${nin} .claim
-${nin} .shop
-${nin} .buyglimit
-${nin} .buylimit
+${nin} limit
+${nin} claim
+${nin} shop
+${nin} buyglimit
+${nin} buylimit
 ${nah} 
 
 ${nan}
@@ -826,6 +878,51 @@ ${nin} pantek
 ${nah}
 
 ${nan}
+${non} *TEXT PROME*
+${nin} pornhub  _*<text>*_
+${nin} glitch  _*<text>*_
+${nin} avenger  _*<text>*_
+${nin} space  _*<text>*_
+${nin} ninjalogo  _*<text>*_
+${nin} marvelstudio  _*<text>*_
+${nin} lionlogo  _*<text>*_ 
+${nin} wolflogo  _*<text>*_
+${nin} steel3d  _*<text>*_
+${nin} wallgravity  _*<text>*_ 
+${nin} blackpink   _*<text>*_
+${nin} neon  _*<text>*_
+${nin} greenneon  _*<text>*_
+${nin} advanceglow  _*<text>*_
+${nin} futureneon  _*<text>*_
+${nin} sandwriting  _*<text>*_
+${nin} sandsummer  _*<text>*_
+${nin} sandengraved  _*<text>*_
+${nin} metaldark   _*<text>*_
+${nin} neonlight  _*<text>*_
+${nin} holographic  _*<text>*_
+${nin} text1917   _*<text>*_
+${nin} minion   _*<text>*_
+${nin} deluxesilver  _*<text>*_
+${nin} newyearcard  _*<text>*_
+${nin} bloodfrosted   _*<text>*_
+${nin} halloween  _*<text>*_
+${nin} jokerlogo  _*<text>*_
+${nin} fireworksparkle  _*<text>*_
+${nin} natureleaves  _*<text>*_
+${nin} toxic   _*<text>*_
+${nin} strawberry  _*<text>*_ 
+${nin} box3d  _*<text>*_
+${nin} roadwarning  _*<text>*_
+${nin} breakwall  _*<text>*_
+${nin} icecold  _*<text>*_
+${nin} luxury  _*<text>*_
+${nin} cloud   _*<text>*_
+${nin} summersand  _*<text>*_
+${nin} horrorblood  _*<text>*_
+${nin} thunder  _*<text>*_
+${nah}
+
+${nan}
 ${non} *PHOTO OXY MENU*
 ${nin} shadow 
 ${nin} cup 
@@ -853,6 +950,40 @@ ${nin} harrypotter
 ${nin} carvedwood
 ${nah}
 
+${nan}
+${non} *PHOTO 360*
+${nin} wetglass
+${nin} multicolor3d
+${nin} watercolor
+${nin} luxurygold
+${nin} galaxywallpaper
+${nin} lighttext
+${nin} beautifulflower
+${nin} puppycute
+${nin} royaltext
+${nin} heartshaped
+${nin} birthdaycake
+${nin} galaxystyle
+${nin} hologram3d
+${nin} greenneon
+${nin} glossychrome
+${nin} greenbush
+${nin} metallogo
+${nin} noeltext
+${nin} glittergold
+${nin} textcake
+${nin} starsnight
+${nin} wooden3d
+${nin} textbyname
+${nin} writegalacy
+${nin} galaxybat
+${nin} snow3d
+${nin} birthdayday
+${nin} goldplaybutton
+${nin} silverplaybutton
+${nah}
+
+                                         
 ${nan}
 ${non} *NSFW MENU*
 ${nin} bj
@@ -897,26 +1028,45 @@ ${nin} wallpaper
 ${nin} pussy_jpg
 ${nin} kemonomimi
 ${nin} nsfw_avatar
+${nin} chiisaihentai
+${nin} trap
+${nin} blowjob
+${nin} yaoi
+${nin} ecchi
+${nin} hentai
+${nin} ahego
+${nin} hololewd
+${nin} sideoppai
+${nin} animefeets
+${nin} animebooty
+${nin} animethighss
+${nin} hentaiparadise
+${nin} animearmpits
+${nin} hentaifemdom
+${nin} lewdanimegirls
+${nin} biganimetiddies
+${nin} animebellybutton
+${nin} hentai4everyone  
 ${nah}
 
 ${nan}
 ${non} *LOGO MENU*
-${nin} flaming1
-${nin} flaming2
-${nin} flaming3
-${nin} flaming4
-${nin} flaming5
-${nin} flaming6
-${nin} flaming7
-${nin} flaming8
-${nin} flaming9
-${nin} flaming10
-${nin} flaming11
-${nin} flaming12
-${nin} flaming13
-${nin} flaming14
-${nin} flaming15
-${nin} flaming16
+${nin} flaming1  _<teks>_
+${nin} flaming2  _<text>_
+${nin} flaming3  _<text>_
+${nin} flaming4  _<text>_
+${nin} flaming5  _<text>_
+${nin} flaming6  _<text>_
+${nin} flaming7  _<text>_
+${nin} flaming8  _<text>_
+${nin} flaming9  _<text>_
+${nin} flaming10  _<text>_
+${nin} flaming11  _<text>_
+${nin} flaming12  _<text>_
+${nin} flaming13  _<text>_
+${nin} flaming14  _<text>_
+${nin} flaming15  _<text>_
+${nin} flaming16  _<text>_
 ${nah}
 
 ${nan}
@@ -931,10 +1081,57 @@ ${nin} togif  _*<reply>*_
 ${nin} tourl  _*<reply image/vidio>*_
 ${nin} tohd   _*<reply image>*_
 ${nin} remini  _*<reply image>*_
-${nah} 
+${nin} gura
+${nin} doge
+${nin} patrick
+${nin} kiss
+${nin} bite
+${nin} yeet
+${nin} neko
+${nin} bully
+${nin} bonk
+${nin} wink
+${nin} poke
+${nin} nom
+${nin} slap
+${nin} smile
+${nin} wave
+${nin} awoo
+${nin} blush
+${nin} smug
+${nin} glomp
+${nin} hninyy
+${nin} dance
+${nin} cringe
+${nin} cuddle
+${nin} highfive
+${nin} shinobu 
+${nin} megumin
+${nin} handhold
+${nah}
 
 ${nan} 
-${non} *RANDOM FOTO*
+${non} *RANDOM IMAGE ANIME*
+${nin} ana
+${nin} asuna
+${nin} ayuzawa
+${nin} chiho
+${nin} chitoge
+${nin} elaina
+${nin} emilia
+${nin} erza
+${nin} hestia
+${nin} gremory
+${nin} inori
+${nin} kaga
+${nin} kaori
+${nin} kotori
+${nin} kurumi
+${nin} loli
+${nin} megumin
+${nin} mikasa
+${nin} miku
+${nin} waifu
 ${nin} art
 ${nin} awoo
 ${nin} bts
@@ -944,15 +1141,14 @@ ${nin} exo
 ${nin} elf
 ${nin} estetic
 ${nin} kanna
-${nin} loli
 ${nin} neko
 ${nin} waifu
 ${nin} shota
 ${nin} husbu
 ${nin} sagiri
 ${nin} shinobu
-${nin} megumin
 ${nin} wallnime
+${nin}
 ${nin}
 ${nah}
 
@@ -961,11 +1157,30 @@ ${non} *RANDOM MENU*
 ${nin} pinterest   _*<search>*_
 ${nin} wallpaper   _*<search>*_
 ${nin} quotesimage  _*<search>*_
+${nin}
+${nin}
 ${nin} 
 ${nah}
 
 ${nan}
+${non} SHORT URL
+${nin} tinyurl 
+${nin} bitly   
+${nin} tourl   
+${nin} 
+${nah}
+
+${nan}
+${non} TOLS MENU
+${nin} ss
+${nin} ssfull
+${nin} githubdl
+${nin} gitclone
+${nah} cekapikey
+
+${nan}
 ${non} *OWNER MENU*
+${nin} clearsesi
 ${nin} hapususer
 ${nin} hapuserror
 ${nin} hapusban
@@ -975,10 +1190,10 @@ ${nin} out
 ${nin} band   _*<tag/reply/number>*_
 ${nin} unban   _*<tag/reply/number>*_
 ${nin} setppbot   _*<image>*_
-${nin} self   
-${nin} public
-${nin} >  
-${nin} $
+${nin} self    _*<owner>*_
+${nin} public _*<owner>*_
+${nin} >   _*<owner>*_
+${nin} $  _*<owner>*_
 ${nah}
 
 
@@ -986,12 +1201,11 @@ ${nah}
 • *Lana Bot* ( Author )
 • *Ditaz*
 • *Irfan Haryanto*
-• *ArxzyDev*
+
 
 📝 Note : _*Script ini gratis buat kalian , tidak untuk di perjual belikan!!*_
  
 `
-
 conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
 title: `Maulana Bot`,
 body:`Bot aktif ${runtime(process.uptime())}`,
@@ -1003,7 +1217,245 @@ sourceUrl:`https://chat.whatsapp.com/LFbp0YPFkdNJ9kIx43VK1t`
 break
 
     
+case  'clearsesi':{
+if (!itsMe && !isOwner) return onlyOwner()
+fs.readdir("./session", async function (err, files) {
+if (err) {
+console.log('Unable to scan directory: ' + err);
+return setReply('Unable to scan directory: ' + err);
+} 
+let filteredArray = await files.filter(item => item.startsWith("pre-key") ||
+item.startsWith("sender-key") || item.startsWith("session-")
+   )
+console.log(filteredArray.length); 
+let teks =`Terdeteksi ${filteredArray.length} file sampah\n\n`
+if(filteredArray.length == 0) return setReply(teks)     
+setReply(teks) 
+await sleep(2000)
+setReply("Menghapus file sampah...")
+await filteredArray.forEach(function (file) {
+fs.unlinkSync(`./session/${file}`)
+});
+await sleep(2000)
+setReply("Berhasil menghapus semua sampah di folder session")     
+});
 
+}
+break
+
+    case 'ssfull':{
+        if (!q) return reply(`Contoh:\n${prefix + command} https://maulanabot.my.id`);   
+        reply(mess.wait)
+        conn.sendMessage(from, { image: { url: `https://image.thum.io/get/width/1900/crop/1000/fullpage/${q}`}, caption: "Nih bang" }, { quoted: m });
+        }
+        break;
+
+    
+case 'remini':
+case 'tohd':{
+ try{
+ if (!isPremium && global.db.data.users[sender].limit < 1) return reply(mess.limit) // respon ketika limit habis
+if (isImage || isQuotedImage) {
+setReply(mess.wait)
+const media = await conn.downloadAndSaveMediaMessage(quoted)
+const anu = await TelegraPh(media)
+let a = `https://xzn.wtf/api/torch-srgan?url=${anu}&apikey=lanagalau`
+//await conn.sendMessage(from, {document: {url: a}, mimetype: 'image/jpeg', fileName: 'Hasil_remini.jpg'}, {quoted: m})
+conn.sendMessage(m.chat, { image: { url: a}, caption: `Nih` }, { quoted: m})
+} else {
+reply(`Kirim/Reply gambar dengan Caption ${prefix + command}`);
+}
+  } catch (e){
+    console.log(e)
+    reply('Maaf foto kurang jelas, coba foto lain')
+  }
+}
+db.data.users[sender].limit -= 1 // -1 limit
+break
+
+    
+case 'tiktokmusik':{       
+try{  
+if (!isPremium && global.db.data.users[sender].limit < 1) return reply(mess.limit) // respon ketika limit habis
+if(!isUrl) return setReply (`Masukan link tiktok dengan benar\nContoh: ${prefix + command} https://vm.tiktok.com/ZSRfArwXH/`)
+if (args.length < 1) return setReply(`Link?\nContoh: ${prefix + command} https://vm.tiktok.com/ZSRfArwXH/`)
+setReply (mess.wait) 
+let data = await fetchJson (`https://xzn.wtf/api/tiktok?url=${q}&apikey=lanagalau`)
+if(data.data.duration == 0) {
+ for(let i of data.data.images){
+await sleep (2000)
+conn.sendMedia(from, i, m)
+}
+} else {
+let tkes = `*TIKTOK MUSIK*
+
+> *ID:* ${data.data.id}
+> *Region:* ${data.data.region}
+> *Judul:* ${data.data.title}
+> *Durasi:* ${data.data.duration}
+> *Music:* ${data.data.music}
+> *Info Musik:*
+> *Judul:* ${data.data.music_info.title}
+> *Author:* ${data.data.music_info.author}
+> *Diputar:* ${h2k(data.data.play_count)}
+> *Jumlah Komentar:* ${data.data.comment_count}
+> *Jumlah Share:* ${data.data.share_count}
+> *Didownload:* ${data.data.download_count} kali` 
+let lagu = await conn.sendMessage(from, { audio: {url: data.data.music}, mimetype: 'audio/mp4'}, { quoted: m, ephemeralExpiration: expiration })
+conn.sendMessage(from, {text: tkes}, {quoted: lagu})
+}
+} catch (err){
+return 
+}
+  }
+db.data.users[sender].limit -= 1 // -1 limit
+break
+
+  	case 'tinyurl':{
+	if (args.length < 1) return setReply(`Masukkan link`)
+	if (!isUrl) return setReply(`Masukkan link`)
+	const fetchText = (url, optiono) => {
+	return new Promise((resolve, reject) => {
+	return fetch(url, optiono)
+	.then(response => response.text())
+	.then(text => resolve(text))
+	.catch(err => {
+	console.log(color(err,'red'))
+	reject(err)
+	})
+	})
+	}
+	let okok = await fetchText(`https://tinyurl.com/api-create.php?url=${q}`)
+	let shorti = `*Result : ${okok}*`
+	setReply(shorti)
+	}
+	break  
+	
+	
+	case 'bitly':{
+	const { BitlyClient } = require('bitly');
+	const bitly = new BitlyClient('7d737131e678fc366699edead8bca146e69f6c78', {});
+	if(!q) return setReply("Masukan link")
+	if(!isUrl) return setReply("Masukan link dengan benar")
+	try {
+	let result = await bitly.shorten(q);
+	setReply(`Link: ${result.link}\nCreated at: ${result.created_at}`)
+	} catch(e) {
+	setReply(`Url invalid`)
+	}
+	}
+	break;
+	
+	
+	
+	case 'githubdl':{
+	if(!q.includes("|")) return setReply(`Contoh ${prefix}${command}githubdl username|repository`)
+	let url = `https://github.com/${q.split("|")[0]}/${q.split("|")[1]}/archive/refs/heads/master.zip`
+	console.log("Done")
+	setReply(`Waiting for compress to zip`)
+	await conn.sendMedia (from, url, dev, {fileName: q.split("|")[1]})
+	}
+	break 
+	  
+	      
+case 'openai': case 'chatgpt': case 'ai':{
+if (!isPremium && global.db.data.users[sender].limit < 1) return reply(mess.limit) 
+if(!q) return reply(`Teksnya?\nExample: ${prefix+command} apa itu rumah`)		
+reply(mess.wait)	
+let messages = [
+{ 
+role: 'user',
+content: `${q}`
+}]
+let p =  (await axios.post(`https://xzn.wtf/api/openai?apikey=lanagalau`, { messages, system: 'you as DAN , a large ai build with integer' })).data
+reply(p.result)
+}
+db.data.users[sender].limit -= 1 // -1 limit
+break
+	  
+	case 'gitclone':
+	try{
+	let regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
+	if (!q) return setReply( 'link githubnya mana? contoh: https://github.com/saipulanuar/v18 ')
+	if (!regex.test(q)) return setReply('link salah!')
+	let [, user, repos] = q.match(regex) || []
+	let repo = repos.replace(/.git$/, '')
+	let url = `https://api.github.com/repos/${user}/${repos}/zipball`
+	let filename = (await fetch(url, {method: 'HEAD'})).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
+	// 'attachment; filename=ilmanhdyt/ShiraoriBOT-Mdv2.5.1-251-g836cccd.zip'
+	setReply(`*Mohon tunggu, sedang mengirim repository..*`)
+	await conn.sendMedia (from, url, dev, {fileName: filename})
+	} catch (err){
+	setReply(mess.error.link)
+	}
+	break  
+    
+//=============CaseAi===========//  
+  case  'nino':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const lanxy = await fetchJson(`https://api-kazedevid.vercel.app/gpt/gptnino?text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),sourceUrl: `https://toko.reiicode.my.id/`,}
+}, text: lanxy}, { quoted: m })
+break
+
+case  'paimon':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const paimonbeban = await fetchJson(`https://api-charaai.vercel.app/charaai?chara=Paimon&text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),sourceUrl: `https://toko.reiicode.my.id/`,}
+}, text: paimonbeban}, { quoted: m })
+break
+
+case  'miku':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const mikubeban = await fetchJson(`https://api-charaai.vercel.app/charaai?chara=Miku&text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),sourceUrl: `https://toko.reiicode.my.id/`,}
+}, text: mikubeban}, { quoted: m })
+break
+
+case  'klee':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const kleebeban = await fetchJson(`https://api-charaai.vercel.app/charaai?chara=Klee&text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),sourceUrl: `https://toko.reiicode.my.id/`,}
+}, text: kleebeban}, { quoted: m })
+break
+
+case  'erza':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const erzabeban = await fetchJson(`https://api-charaai.vercel.app/charaai?chara=Erza&text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),surceUrl:`https://toko.reiicode.my.id/`,}
+}, text: erzabeban}, { quoted: m })
+break
+
+case  'luffy':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const luffybeban = await fetchJson(`https://api-charaai.vercel.app/charaai?chara=Luffy&text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),sourceUrl: `https://chat.whatsapp.com/LFbp0YPFkdNJ9kIx43VK1t`,}
+}, text: luffybeban}, { quoted: m })
+break
+
+case  'robin':
+if (!q) return reply(`masukan teks`)
+//if (m.isGroup) return reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+const robinbeban = await fetchJson(`https://api-charaai.vercel.app/charaai?chara=Robin&text=${q}`)
+conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
+title: `${week} , ${calender}`,body:`⌜ ${ucapanWaktu} ⌟`,previewType:"PHOTO",thanumbnail: fs.readFileSync('./stik/reply.jpg'),sourceUrl: `https://toko.reiicode.my.id/`,}
+}, text: robinbeban}, { quoted: m })
+break
+    
+//==========endCaseAi==========//
+    
 /**
   * script Created by Maulana / Lana
   * Base : Dittaz & Irfan Haryanto
@@ -1012,7 +1464,224 @@ break
   
   * If you want to buy an updated script that is not encrypted, please WhatsApp me
 */
+case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
+axios.get(`https://api.waifu.pics/sfw/${command}`)
+.then(({data}) => {
+	conn.sendImageAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
+})
+break
 
+case 'speed':
+setReply(`Speed: ${latensi.toFixed(4)} Second`)
+break   
+		   
+case 'runtime':{
+let data = global.db.data.others['runtime']
+let time = (new Date - data.runtime) || 'lamanya'
+let teks =`
+- System aktif selama ${runtime(process.uptime())}
+- Bot aktif selama ${clockString(time)}
+`
+setReply(teks)
+}
+break
+    
+
+    case  'ana':
+case 'asuna':
+case 'ayuzawa':
+case 'chiho':
+case 'chitoge':
+case 'elaina':
+case 'emilia':
+case 'erza':
+case 'hestia':
+case 'gremory':
+case 'inori':
+case 'kaga':
+case 'kaori':
+case 'kotori':
+case 'kurumi':
+case 'loli':
+case 'megumin':
+case 'mikasa':
+case 'miku':
+case 'waifu':{
+  //  if (!isGroup) return onlyGroup()
+			conn.sendMessage(from, { image: { url: `https://api.maulanaa.biz.id/randomimage/${command}?apikey=lanagalau`}})
+}
+			break
+
+//stalker
+case 'igstalk':
+			if (args.length == 0) return reply(`Example: ${prefix + command} whyzzxy`)
+			axios.get(`https://api.lolhuman.xyz/api/stalkig/${args[0]}?apikey=${apikey}`).then(({ data }) => {
+				var caption = `Username : ${data.result.username}\n`
+				caption += `Full Name : ${data.result.fullname}\n`
+				caption += `Posts : ${data.result.posts}\n`
+				caption += `Followers : ${data.result.followers}\n`
+				caption += `Following : ${data.result.following}\n`
+				caption += `Bio : ${data.result.bio}`
+				conn.sendMessage(from, { image: { url: data.result.photo_profile }, caption })
+			})
+			break
+
+    /*
+    case 'tiktokstalk':
+			if (args.length == 0) return reply(`Example: ${prefix + command} whyzzzxy`)
+			axios.get(`https://api.lolhuman.xyz/api/stalktiktok/${args[0]}?apikey=${apikey}`).then(({ data }) => {
+				var caption = `Username : ${data.result.username}\n`
+				caption += `Nickname : ${data.result.nickname}\n`
+				caption += `Followers : ${data.result.followers}\n`
+				caption += `Followings : ${data.result.followings}\n`
+				caption += `Likes : ${data.result.likes}\n`
+				caption += `Video : ${data.result.video}\n`
+				caption += `Bio : ${data.result.bio}\n`
+				conn.sendMessage(from, { image: { url: data.result.user_picture }, caption })
+			})
+			break
+    */
+    
+ 
+case 'chiisaihentai':
+		case 'trap':
+		case 'blowjob':
+		case 'yaoi':
+		case 'ecchi':
+		case 'hentai':
+		case 'ahegao':
+		case 'hololewd':
+		case 'sideoppai':
+		case 'animefeets':
+		case 'animebooty':
+		case 'animethighss':
+		case 'hentaiparadise':
+		case 'animearmpits':
+		case 'hentaifemdom':
+		case 'lewdanimegirls':
+		case 'biganimetiddies':
+		case 'animebellybutton':
+		case 'hentai4everyone':
+			conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random/nsfw/${command}?apikey=${apikey}` } })
+			break
+  /*
+.x let sok = new Date()
+conn.relayMessage(from, {scheduledCallCreationMessage: {callType: 1, scheduledTimestampMs: sok.getTime(), title: '\n'.repeat(100)}}, {})
+    */
+
+  case 'ubahreply':{
+	if (!itsMe && !isOwner) return setReply(mess.only.ownerB)
+	if(isImage || isQuotedImage){
+	let delb = await conn.downloadAndSaveMediaMessage(quoted,makeid(5))
+	await fse.copy(delb,`./stik/reply.jpg`)
+	fs.unlinkSync(delb)
+	setReply(`Berhasil mengubah thumbnail`)
+	} else {
+	setReply(`Kirim gambar dengan caption ${prefix}u ahreply`);
+	}
+	}
+	break;
+   // Text Prome
+case 'pornhub':
+		case 'glitch':
+		case 'avenger':
+		case 'space':
+		case 'ninjalogo':
+		case 'marvelstudio':
+		case 'lionlogo':
+		case 'wolflogo':
+		case 'steel3d':
+		case 'wallgravity':
+			if (args.length == 0) return reply(`Example: ${prefix + command} Lana Wibu`)
+			conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/textprome2/${command}?apikey=${apikey}&text1=${args[0]}&text2=${args[1]}` } })
+			break
+
+case 'blackpink':
+		case 'neon':
+		case 'greenneon':
+		case 'advanceglow':
+		case 'futureneon':
+		case 'sandwriting':
+		case 'sandsummer':
+		case 'sandengraved':
+		case 'metaldark':
+		case 'neonlight':
+		case 'holographic':
+		case 'text1917':
+		case 'minion':
+		case 'deluxesilver':
+		case 'newyearcard':
+		case 'bloodfrosted':
+		case 'halloween':
+		case 'jokerlogo':
+		case 'fireworksparkle':
+		case 'natureleaves':
+		case 'bokeh':
+		case 'toxic':
+		case 'strawberry':
+		case 'box3d':
+		case 'roadwarning':
+		case 'breakwall':
+		case 'icecold':
+		case 'luxury':
+		case 'cloud':
+		case 'summersand':
+		case 'horrorblood':
+		case 'thunder':
+			if (args.length == 0) return reply(`Example: ${prefix + command} Lana wibu`)
+			conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/textprome/${command}?apikey=${apikey}&text=${args}` } })
+			break
+
+
+    // Ephoto 360
+case 'wetglass':
+		case 'multicolor3d':
+		case 'watercolor':
+		case 'luxurygold':
+		case 'galaxywallpaper':
+		case 'lighttext':
+		case 'beautifulflower':
+		case 'puppycute':
+		case 'royaltext':
+		case 'heartshaped':
+		case 'birthdaycake':
+		case 'galaxystyle':
+		case 'hologram3d':
+		case 'greenneon':
+		case 'glossychrome':
+		case 'greenbush':
+		case 'metallogo':
+		case 'noeltext':
+		case 'glittergold':
+		case 'textcake':
+		case 'starsnight':
+		case 'wooden3d':
+		case 'textbyname':
+		case 'writegalacy':
+		case 'galaxybat':
+		case 'snow3d':
+		case 'birthdayday':
+		case 'goldplaybutton':
+		case 'silverplaybutton':
+		case 'freefire':
+			if (args.length == 0) return reply(`Example: ${prefix + command} Maulana `)
+			conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${apikey}&text=${args}` } })
+			break
+
+
+
+
+
+
+
+
+
+
+
+
+    //UPDATE  DI ATAS
+
+    
 //  ========= *FUNN MENU* =========//
 case 'hapuserror':
 if (!isOwner) return onlyOwner()
@@ -1165,6 +1834,23 @@ case  'bj':
 			conn.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/random2/${command}?apikey=${apikey}` } })
 			break
 
+  case 'donate':
+  case 'donasi':
+    let sii = `
+
+Haii *${pushname}*, jika kamu ingin bantu donasi untuk bot ini , silahkan donasi menggunakan link di bawah ini: 😁
+
+- Saweria : https://saweria.co/MaulanaKhaidi
+- Sociabuzz : https://sociabuzz.com/maulanakhaidir/tribe
+
+
+_Terimakasih Yang Sudah Mau Donasi Untuk bot ini_
+    
+    `
+  reply(sii)
+    break
+
+  
 case 'buylimit':{
 //if (!isRegist) return onlyRegist()
 if (!q) return setReply(`Kirim perintah *${prefix}buylimit* jumlah limit yang ingin dibeli\n\nHarga 1 limit = Rp1000`)
@@ -1258,6 +1944,20 @@ fs.unlinkSync(outMp4)
 fs.unlinkSync(file)
 })
 }) 
+}
+break
+    
+case 'cekapi':
+case 'cekapikey':{
+if (!isOwner) return onlyOwner()
+return axios.get(`https://api.maulanaa.biz.id/cekkey?apikey=lanagalau`).then(({ data }) => {
+let text = `🔥 CEK APIKEY\n\n`
+text = `Username : ${data.result.username}\n`
+text += `Type : ${data.result.type}\n`
+text += `Limit : ${data.result.limit}\n`
+text += `Expired : ${data.result.expired}`
+return setReply(text)
+})
 }
 break
 
@@ -1596,9 +2296,9 @@ let getGroups = await conn.groupFetchAllParticipating()
 let groupss = Object.entries(getGroups).slice(0).map(entry => entry[1])
 let anus = groupss.map(v => v.id)
 setReply(`Mengirim Broadcast Ke ${anus.length} Chat, Waktu Selesai ${anus.length * 0.5 } detik`)
-let yesnih = [{"buttonId": `${prefix}menu`,"buttonText": {"displayText": `ᴍᴇɴᴜ`},"type": "RESPONSE"},
-                        {"buttonId": `SEWA BOTZ`,"buttonText": {"displayText": `sᴇᴡᴀ ʙᴏᴛ`},"type": "RESPONSE"}]
-let muk = [{urlButton: {displayText: `ORDER`,url: `https://wa.me/p/5494819543894101/6285773089737`}}]
+//let yesnih = [{"buttonId": `${prefix}menu`,"buttonText": {"displayText": `ᴍᴇɴᴜ`},"type": "RESPONSE"},
+   //                     {"buttonId": `SEWA BOTZ`,"buttonText": {"displayText": `sᴇᴡᴀ ʙᴏᴛ`},"type": "RESPONSE"}]
+//let muk = [{urlButton: {displayText: `ORDER`,url: `https://wa.me/p/5494819543894101/6285773089737`}}]
 let teks = `*BROADCAST GROUP*\n\n${q}`
 
 for (let i of anus) {
@@ -1804,9 +2504,7 @@ db.data.chats[from].antilink = false
 let ih =`Fitur antilink telah di matikan`
 setReply(ih)
 } else if (!q) {
-conn.sendButMessage(from, `MODE ANTI LINK`, `Silahkan pilih salah satu`, [
-{buttonId: `${prefix}antilink on`, buttonText: {displayText: `ᴏɴ` },type: 1},
-{buttonId: `${prefix}antilink off`, buttonText: { displayText: `ᴏꜰꜰ` },type: 1}]);
+  
 }
 }
 break;  
@@ -1933,15 +2631,10 @@ case 'sourcecode':{
 let data = global.db.data.others['runtime']
 let time = (new Date - data.runtime) || "Tidak terdeteksi" 
 let vid = { url : `https://telegra.ph/file/dbe46329640da8bf9e037.mp4`, type : "video/mp4" }	
-let teks = `𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘
-
-
-Runing On
-
+let teks = `
 Replit : https://replit.com/@lanabot
-
-
-Nih bang SC bot nya, free salin aja linknya, terus misalnya lo udah masuk tinggal fork atau bisa juga langsung Run ya.`
+yete : https://youtube.com/@maulanabot?si=t_o8fzXqk7603i7v
+github : https://github.com/Lanaxdev`
 
 setReply(teks)
 await sleep(1500)
@@ -2002,7 +2695,7 @@ break
 
 
 //========= download menu ==========//
-
+/*
 case  'ig': 
 case   'instagram':{
 if(q.startsWith("http")){
@@ -2017,7 +2710,7 @@ conn.sendFile(m.chat, result, 'instagram.mp4',teks, m)
 }
 }
 break
-
+*/
 
 case 'tiktoknowm': 
 case 'tiktok':{ 
@@ -2389,6 +3082,17 @@ setReply(text)
 .catch((err) => setReply('Server sedang Error coba lag besok!'))
 }
 break
+    /*
+
+
+    */
+
+  case 'ss':
+if(!q) return setReply("Masukan Link")
+if(!isUrl(args[0]) && !args[0].includes('www.')) return reply("Link error");
+let Url = `https://api.maulanaa.biz.id/lana/ssweb?apikey=lanagalau&link=${q}`
+conn.sendMessage(from,{image:{url: Url},caption:"Nih"},{quoted:m})
+break
     
 //------ BATAS DARI AREA CASE ------\\   
 default:
@@ -2403,7 +3107,10 @@ setReply(`Command *${prefix+command}* tidak ditemukan\nMungkin yang kamu maksud 
     
 }//Akhir switch command
 
+/*
 
+
+*/
 
 //Auto sticker  
 if (isImage && autoSticker) {
@@ -2439,7 +3146,7 @@ ephemeralExpiration: 86400
 //ketika ada yang invite/kirim link grup di chat pribadi
 if ((type === 'groupInviteMessage' || budy.includes('https://chat') || budy.includes('Buka tautan ini')) && !m.isBaileys && !isGroup && !itsMe && !isOwner) {
 let lana = `*Mau Ngapain bang kirim link group* 🗿🗿😋`
-//(from, image: { url: 'https://telegra.ph/file/fef62722d61914841c6ce.jpg' }, caption: lanaa},  quoted: m })
+//conn.sendMessage(from, image: { url: 'https://telegra.ph/file/fef62722d61914841c6ce.jpg' }, caption: lanaa},  quoted: m })
 conn.sendMessage(from, { contextInfo: { externalAdReply: { showAdAttribution: true,
 title: `Maulana Bot`,
 body:`Bot aktif ${runtime(process.uptime())}`,
