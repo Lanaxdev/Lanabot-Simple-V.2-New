@@ -1,4 +1,4 @@
-## Lana Bot simple v.2 ESM
+## Lana Bot simple v.3 ESM
 <img src="https://telegra.ph/file/2677c6ca6d9b2a372d009.jpg" alt="LANA" width="360" />
 
 ---
@@ -30,9 +30,9 @@
 - [LANA BOT](https://chat.whatsapp.com/JgJHpvM7K6UAYVlT2zQPFA)
 
 # Thanks to
- <a href="https://github.com/hexagonz"><img src="https://https://github.com/hexagonz.png?size=100" width="100" height="100"></a> | [![FERDIZ](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz-afk) | [![RASHID](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) 
+ <a href=" "><img src="https://https://github.com/hexagonz.png?size=100" width="100" height="100"></a> | [![FERDIZ](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz-afk) | [![RASHID](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) 
 ---|---|---
-[Adiwajshing](https://github.com/adiwajshing/Baileys)  | [Hexagonz](https://github.com/hexagonz) |
+[Adiwajshing](https://github.com/adiwajshing/Baileys)  | [Rtwone]( ) |
 Owner of Baileys | Constributor | Constributor
 
 
