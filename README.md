@@ -27,24 +27,9 @@
 - [Gopay](https://)
 
 # Official Group 
-- [LANA BOT](https://chat.whatsapp.com/JgJHpvM7K6UAYVlT2zQPFA)
-
-# Thanks to
- <a href=" "><img src="https://https://github.com/hexagonz.png?size=100" width="100" height="100"></a> | [![FERDIZ](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz-afk) | [![RASHID](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) 
----|---|---
-[Adiwajshing](https://github.com/adiwajshing/Baileys)  | [Rtwone]( ) || [Lana Botz]( ) |
-Owner of Baileys | Owner Of Chitanda Eru | Developer Scrip
+- [LANA BOT](https://whatsapp.com/channel/0029VagJFAn1dAwCQYKodZ14)
 
 
- <a href="https://github.com/hexagonz"><img src="https://https://github.com/hexagonz.png?size=100" width="100" height="100"></a> | [![FERDIZ](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz-afk) | [![RASHID](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) 
- ---|---|---
-[Official Dittaz](https://github.com/officialdittaz)| [YogiPw](https://github.com/yogipw) | 
-Owner Amelia - Botz | For Help | 
-
-##
-* [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`Hexagonz`](https://github.com/hexagonz)
-* [`Yogipw`](https://github.com/yogipw)
 
 > Run Pake PM@ + COLOR
 
